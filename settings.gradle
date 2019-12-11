@@ -1,0 +1,2 @@
+rootProject.name = 'junit5-sample'
+include('modules:client','modules:model','modules:service','modules:serviceimpl','simple-modules:hello','simple-modules:main')
