@@ -11,8 +11,6 @@ buildscript {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
-
-
 allprojects {
 
     apply plugin: 'java'
@@ -25,13 +23,14 @@ allprojects {
         jcenter()
     }
 
-    test {
-        useJUnitPlatform()
-    }
+	test {
+		useJUnitPlatform()
+	}
 
     dependencies {
         testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
         testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.2'
+		testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.5.1'
         testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.14.0'
     }
 
